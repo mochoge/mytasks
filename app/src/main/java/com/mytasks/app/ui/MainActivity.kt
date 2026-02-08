@@ -75,7 +75,6 @@ class MainActivity : AppCompatActivity() {
     private fun observeViewModel() {
         viewModel.allTasks.observe(this) { tasks ->
             adapter.submitList(tasks)
-            updateSummary()
         }
         
         updateSummary()
